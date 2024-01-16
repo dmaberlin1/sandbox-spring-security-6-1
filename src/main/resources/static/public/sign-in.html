@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>403 page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #544a7d;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ffd452, #544a7d);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ffd452, #544a7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: #fff; /* Цвет текста на фоне */
+
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            margin-top: 20px;
+            color: #6c5b3c; /* Цвет тёмного песка */
+            text-transform: uppercase; /* Преобразование текста в верхний регистр */
+            letter-spacing: 8px; /
+        }
+
+        form {
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            margin-top: 20px;
+            color: #ffcd94; /
+        }
+
+        label {
+            margin-bottom: 10px;
+            color: #ffcd94; /* Цвет текста меток */
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 15px;
+            font-family: 'Lobster', cursive;
+            font-size: 15px;
+            width: 250px;
+            background-color: rgba(255, 255, 255, 0.1); /* Прозрачный белый цвет фона для полей ввода */
+            border: 1px solid #c38c4f; /* Белая обводка вокруг полей ввода */
+            color: #2e241d;
+            /*outline: none; !* Убираем белую обводку *!*/
+        }
+
+        input:focus{
+outline: none;
+        }
+
+        .login-button {
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+            background: #3498db; /* Цвет кнопки в стиле Властелина Колец */
+            color: #ecf0f1;
+            border: none;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            font-size: 16px;
+            cursor: pointer;
+            animation: rotate 5s infinite linear, colorChange 4s infinite alternate;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                background: rgba(229, 184, 166, 0.73);
+            }
+            100% {
+                background: #764109;
+            }
+        }
+
+        iframe {
+            margin-top: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<h2>
+    <span style="color: #6c5b3c; font-size: 32px;">Authentication</span>
+    <span style="opacity: 0.5%">Page</span>
+</h2>
+
+<form action="">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit" class="login-button">Login</button>
+</form>
+
+<iframe width="800" height="500"
+        src="https://www.youtube.com/embed/3xYXUeSmb-Y?si=hE2yHXafr6H5aivh" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+></iframe>
+</body>
+</html>
